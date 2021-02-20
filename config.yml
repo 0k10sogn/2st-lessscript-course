@@ -1,0 +1,16 @@
+title: 2st <script
+description: this is my 2st course <script
+template:
+  repo: 2st-lessscript-template
+  name: 2st-lessscript
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
